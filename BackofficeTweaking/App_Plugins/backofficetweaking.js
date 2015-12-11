@@ -36,6 +36,13 @@
                                             $(this).addClass("hidden-button")
                                         });
                                         break;
+                                    case 'subheader':
+                                        // Hide preview buttons
+                                        var previewButtons = $(".umb-sub-header");
+                                        previewButtons.each(function () {
+                                            $(this).addClass("hidden-button")
+                                        });
+                                        break;
                                     case 'actions':
                                         // Hide actions button
                                         var actionsButton = $(".umb-panel-header div[class*='umb-btn-toolbar'] a:has(localize[key='general_actions'])");
