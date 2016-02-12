@@ -31,9 +31,9 @@
                                 switch (buttons[i].toLowerCase()) {
                                     case 'preview':
                                         // Hide preview buttons
-                                        var previewButtons = $(".umb-tab-buttons > div > a:has(localize[key='buttons_showPage'])");
+                                        var previewButtons = $(".umb-tab-buttons span:has(localize[key='buttons_showPage'])");
                                         previewButtons.each(function () {
-                                            $(this).addClass("hidden-button")
+                                            $(this).parent().addClass("hidden-button")
                                         });
                                         break;
                                     case 'subheader':
@@ -45,7 +45,7 @@
                                         break;
                                     case 'actions':
                                         // Hide actions button
-                                        var actionsButton = $(".umb-panel-header div[class*='umb-btn-toolbar'] a:has(localize[key='general_actions'])");
+                                        var actionsButton = $(".umb-panel-header  a:has(localize[key='general_actions'])");
                                         actionsButton.each(function () {
                                             $(this).addClass("hidden-button")
                                         });
