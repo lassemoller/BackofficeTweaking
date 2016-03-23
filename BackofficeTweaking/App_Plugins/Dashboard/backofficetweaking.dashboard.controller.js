@@ -23,6 +23,7 @@
                 { "title": "Users", "alias": "Users", "type": "textarea", "props": {} },
                 { "title": "User Types", "alias": "UserTypes", "type": "textarea", "props": {} },
                 { "title": "Content Ids", "alias": "ContentIds", "type": "textarea", "props": {} },
+                { "title": "Parent content Ids", "alias": "ParentContentIds", "type": "textarea", "props": {} },
                 { "title": "Content Types", "alias": "ContentTypes", "type": "textarea", "props": {} },
                 { "title": "Description", "alias": "Description", "type": "textarea", "props": {} }
             ]
@@ -62,7 +63,7 @@
         resetProertiesEditors();
 
         // Load the css file with the grid's styles
-        assetsService.loadCss("/App_Plugins/BackofficeTweaking/Dashboard/backofficetweaking.dashboard.css");
+        assetsService.loadCss("../App_Plugins/BackofficeTweaking/Dashboard/backofficetweaking.dashboard.css");
 
         // Load rules
         BackofficeTweakingResource.getRules().then(
