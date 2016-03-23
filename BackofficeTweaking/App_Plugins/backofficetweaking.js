@@ -52,26 +52,26 @@
                                         break;
                                     case 'save':
                                         // Hide save buttons
-                                        var saveButtons = $(".umb-tab-buttons > div > a:has(localize[key='buttons_saveAndPublish'])");
+                                        var saveButtons = $(".umb-tab-buttons .btn-group.umb-button-group.dropup");
                                         saveButtons.each(function () {
                                             $(this).addClass("hidden-button")
                                         });
-                                        saveButtons = $(".umb-tab-buttons > div > a:has(localize[key='buttons_saveToPublish'])");
-                                        saveButtons.each(function () {
-                                            $(this).addClass("hidden-button")
-                                        });
-                                        saveButtons = $(".umb-tab-buttons > div > a:has(localize[key='buttons_save'])");
-                                        saveButtons.each(function () {
-                                            $(this).addClass("hidden-button")
-                                        });
-                                        saveButtons = $(".umb-tab-buttons > div > a:has(localize[key='content_unPublish'])");
-                                        saveButtons.each(function () {
-                                            $(this).addClass("hidden-button")
-                                        });
-                                        saveButtons = $(".umb-tab-buttons > div > a:has(span[class='caret'])");
-                                        saveButtons.each(function () {
-                                            $(this).addClass("hidden-button")
-                                        });
+                                        //saveButtons = $(".umb-tab-buttons > div > a:has(localize[key='buttons_saveToPublish'])");
+                                        //saveButtons.each(function () {
+                                        //    $(this).addClass("hidden-button")
+                                        //});
+                                        //saveButtons = $(".umb-tab-buttons > div > a:has(localize[key='buttons_save'])");
+                                        //saveButtons.each(function () {
+                                        //    $(this).addClass("hidden-button")
+                                        //});
+                                        //saveButtons = $(".umb-tab-buttons > div > a:has(localize[key='content_unPublish'])");
+                                        //saveButtons.each(function () {
+                                        //    $(this).addClass("hidden-button")
+                                        //});
+                                        //saveButtons = $(".umb-tab-buttons > div > a:has(span[class='caret'])");
+                                        //saveButtons.each(function () {
+                                        //    $(this).addClass("hidden-button")
+                                        //});
                                         break;
                                     default:
                                         break;
