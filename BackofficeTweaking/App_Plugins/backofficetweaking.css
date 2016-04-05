@@ -74,8 +74,8 @@ div.umb-tab-pane {
     -webkit-animation-name: nodeInserted;
 }
 
-.nav-tabs > li {
-    display: none;
+.nav-tabs > li:not(.dropdown) {
+    display: none; 
 }
 
 .show-tabs > li {
